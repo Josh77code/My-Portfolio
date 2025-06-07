@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope, FaXTwitter } from "react-icons/fa6"; // Import icons
 import '../styles/styles.css';
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
