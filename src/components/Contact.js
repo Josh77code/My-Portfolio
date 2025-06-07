@@ -20,10 +20,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Form submitted!');
-    setFormData({ name: '', email: '', message: '' }); // Reset form fields
+    emailjs.send(
+      "service_70ddgsc",      // Replace with your EmailJS service ID
+      "template_h8q3vj5",     // Replace with your EmailJS template ID
+      formData,
+      "g6T7g0Y424Y-PSWnw"          // Replace with your EmailJS user ID or public key
+    )
+      .then((result) => {
+        alert("Message sent!");
+      }, (error) => {
+        alert("Failed to send, please try again.");
+      });
   };
-
   return (
     <motion.section className="contact" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }}>
       <h2>Contact Me</h2>

@@ -31,6 +31,23 @@ const Projects = () => {
           <p>A Machine learning driven web application to detect phishing attack that amy try to infringe the confidentiality itegrity and availability of the organization's website</p>
           <a href="https://github.com/Josh77code/Intrusion_Authentication" target="_blank" rel="noopener noreferrer">View Project</a>
         </motion.div>
+        <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+          <h3>Client Bonus Blog Web App</h3>
+          <p>A web application that allow people to post their contents online and make make money through it </p>
+          <a href="https://github.com/Josh77code/ClientBonusApp" target="_blank" rel="noopener noreferrer">View Project</a>
+        </motion.div>
+
+        <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+          <h3>Intrusion Monitoring tool</h3>
+          <p>A mahine learning web based application that allow admin to view any forms of intrusion in the authentication part of the web app</p>
+          <a href="https://github.com/Josh77code/Intrusion_Monitoring" target="_blank" rel="noopener noreferrer">View Project</a>
+        </motion.div>
+
+        <motion.div className="project-card" whileHover={{ scale: 1.05 }}>
+          <h3>Hostel Management Systems</h3>
+          <p>A webapplication that allow students to sucessfully access their hostel allocation systems. Where admin will upload the documents</p>
+          <a href="https://github.com/Josh77code/HostelManagementSystem" target="_blank" rel="noopener noreferrer">View Project</a>
+        </motion.div>
       </div>
     </motion.section>
 
